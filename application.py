@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 #comment123
-#rani
+
 #comment1234
 
 from random import randrange
