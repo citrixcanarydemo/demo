@@ -1,9 +1,7 @@
 #!/usr/bin/env python
 
 #comment1234
-#comment1234
-#comment1234
-#comment1234
+
 
 from random import randrange
 from flask import Flask
