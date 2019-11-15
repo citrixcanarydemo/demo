@@ -2,6 +2,7 @@
 
 #comment1234
 #comment1234
+#comment1234
 
 from random import randrange
 from flask import Flask
@@ -13,9 +14,9 @@ c = Counter('requests', 'Number of requests served, by http code', ['http_code']
 
 @app.route('/')
 def hello():
-    return new_handle_request_html()
+    return handle_request_html()
 
-# http request handler for all
+# http request handler for all 
 def handle_request_html():
     os.environ['SUCCESS_RATE'] = "90"
     if randrange(1, 100) > int(os.environ['SUCCESS_RATE']):
@@ -26,7 +27,7 @@ def handle_request_html():
         return "Hello World!\n"
 
 
-# New http handler for all
+# New http handler for all 
 def new_handle_request_html():
     os.environ['SUCCESS_RATE'] = "40"
     if randrange(1, 100) > int(os.environ['SUCCESS_RATE']):
